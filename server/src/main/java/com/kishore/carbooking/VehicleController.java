@@ -1,10 +1,12 @@
-package com.kishore.carbooking;
+]package com.kishore.carbooking;
 
 import java.util.List;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin(origins = {"http://127.0.0.1:5500", "http://localhost:5500"})
 public class VehicleController {
 
     @GetMapping("/api/vehicles")
